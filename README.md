@@ -1,2 +1,2 @@
-# waft
-Simple landing page.
+# Waft
+Simple landing page with signup form.
