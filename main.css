@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');  
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+--html {
+    height: 100%;
+    background: rgba(0,94,91,1);
+background: -moz-linear-gradient(45deg, rgba(0,94,91,1) 0%, rgba(115,217,214,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,94,91,1)), color-stop(100%, rgba(115,217,214,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,94,91,1) 0%, rgba(115,217,214,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,94,91,1) 0%, rgba(115,217,214,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,94,91,1) 0%, rgba(115,217,214,1) 100%);
+background: linear-gradient(45deg, rgba(0,94,91,1) 0%, rgba(115,217,214,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005e5b', endColorstr='#73d9d6', GradientType=1);
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+}
+
+body {
+  /* Location of the image */
+  background-image: url("assets/gradient.png");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #399B98;
+}
+
+div.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:50%;
+    overflow:visible;
+}
+
+img.logo {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-200%;
+    margin-left:-55%;
+    margin-bottom:105%;
+}
+
+.slogan {
+  font-family:"Nunito-Semibold", "Nunito","San Francisco", sans-serif;
+  font-size:30px;
+  text-shadow: 0px 0px 1px rgba(255,255,255, 0.3);
+  color:#FFFFFF;
+  width:100%;
+  height:45px;
+  display:flex;
+  justify-content:center;
+  position:absolute;
+  top: 41%;
+}
+
+@font-face {
+  font-family:'Nunito';
+  src: url('Nunito-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'Nunito';
+  src: url('Nunito-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+.email-form {
+  display:flex;
+  justify-content:center;
+  position:absolute;
+}
+
+.wrapper {
+    padding-top: 500px;
+}
+.form-row {
+    
+  display: flex;
+  position: absolute;
+  justify-content: center;
+    
+  width: 100%;
+  width: 100vw;
+  padding: 1em;
+}
+
+.placeholder {
+  font-family:'Nunito';"San Francisco", sans-serif;  
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+  padding-left: 100px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #CCCCCC;
+   font-family:'Nunito';    
+   font-size: 18px;
+   letter-spacing: 0.8px;
+   font-weight:400;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #CCCCCC;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #CCCCCC;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #CCCCCC;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #CCCCCC;
+}
+
+.textfield {
+  width:340px;
+  height:52px;   
+  border-radius: 8px 0px 0px 8px;  
+  border:none;
+  box-shadow:inset 0 0 0.5px 0.5px #888;
+  background: #fff;    
+}
+
+.form-row button {
+
+  height:52px;
+  bottom:52px;
+  left:339px;    
+      
+  font-family:'Nunito';"San Francisco", sans-serif;     
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+
+  color: #FFFFFF;
+  background-color: #1B5957;
+
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+
+  padding: 10px 2em;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #00BAB4;
+}
+
+.form-row button:active {
+  background-color: #00BAB4;
+}
+
+#email {
+   color:#184F4D;
+   font-family:'Nunito-Semibold';'Nunito';"San Francisco", sans-serif;      
+   font-size:18px;
+   letter-spacing:0.8px;
+   font-weight:400;
+   padding-left:20px;
+}
+
+#block-buttontext_full {
+   display:block;
+  }
+
+#block-buttontext_mobile {
+  display:none;
+  padding-right:5em;     
+ }
+
+input:focus {
+    outline:none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 650px) {
+    
+  img.logo {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-200%;
+    margin-left:-55%;
+    margin-bottom:105%;
+}    
+    
+  .wrapper {
+  padding-top: 450px;
+}
+    
+  .slogan {
+  font-family:"Nunito-Semibold","Nunito","San Francisco", sans-serif;
+  font-size:25px;
+  text-shadow: 0px 0px 1px rgba(255,255,255, 0.3);
+  color:#FFFFFF;
+  width:100%;
+  height:45px;
+  display:flex;
+  justify-content:center;
+  position:absolute;
+  top: 41%;
+}
+    
+  .placeholder {
+  font-family:'Nunito';"San Francisco", sans-serif;  
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+}    
+    
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #CCCCCC;
+   font-family:'Nunito';    
+   font-size: 12px;
+   letter-spacing: 0.8px;
+   font-weight:400;
+}    
+    
+#email {
+   color:#184F4D;
+   font-family:'Nunito-Semibold';'Nunito';"San Francisco", sans-serif;      
+   font-size:18px;
+   letter-spacing:0.8px;
+   font-weight:400;
+   padding-left:20px;
+   padding-bottom: 5px;
+}
+  
+  .textfield {
+  width:200px;
+  height:52px;   
+  border-radius: 8px 0px 0px 8px;  
+  border:none;
+  box-shadow:inset 0 0 0.5px 0.5px #888;
+  background: #fff;     
+}  
+    
+  .form-row button {
+
+  height:52px;
+      
+  font-family:'Nunito", "San Francisco", sans-serif;      
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+
+  color: #FFFFFF;
+  background-color: #1B5957;
+
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+
+  padding: 10px 2em;
+  cursor: pointer;
+    }
+
+#block-buttontext_full{
+   display:block;
+  }
+
+ #block-buttontext_mobile{
+  display:none;
+  padding-right:5em;     
+ }
+}
+
+@media only screen and (max-width: 400px) {
+    
+  img.logo {
+    position:relative;
+    max-width:70%;
+    max-height:100%;
+    margin-top:-200%;
+    margin-left:-37%;
+    margin-bottom:105%;
+}    
+    
+  .wrapper {
+  padding-top: 350px;
+}
+    
+  .slogan {
+  font-family:"Nunito-Semibold","Nunito","San Francisco", sans-serif;
+  font-size:20px;
+  text-shadow: 0px 0px 1px rgba(255,255,255, 0.3);
+  color:#FFFFFF;
+  width:100%;
+  height:35px;
+  display:flex;
+  justify-content:center;
+  position:absolute;
+  top: 38%;
+}
+    
+  .placeholder {
+  font-family:'Nunito';    
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+}    
+    
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #CCCCCC;
+   font-family:'Nunito';    
+   font-size: 12px;
+   letter-spacing: 0.8px;
+   font-weight:400;
+}    
+    
+#email {
+   color:#184F4D;
+   font-family:'Nunito-Semibold';'Nunito';"San Francisco", sans-serif;      
+   font-size:18px;
+   letter-spacing:0.8px;
+   font-weight:400;
+   padding-left:20px;
+   padding-bottom: 5px;
+}
+  
+  .textfield {
+  width:200px;
+  height:52px; 
+  
+  border-radius: 8px 0px 0px 8px;  
+  border:none;
+  box-shadow:inset 0 0 0.5px 0.5px #888;
+  background: #fff;     
+}  
+    
+  .form-row button {
+      
+  display: flex; 
+
+  height:52px;
+  width:35px;
+      
+  font-family:'Nunito',"San Francisco", sans-serif;     
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+
+  color: #FFFFFF;
+  background-color: #1B5957;
+
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+
+  padding: 10px 2em;
+  cursor: pointer;
+    }
+    
+#block-buttontext_full{
+   display:none;
+  }
+
+#block-buttontext_mobile{
+  display:block;
+  padding-right:5em;     
+ }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      
+    
+body, html {
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+}
+
+body {
+  /* Location of the image */
+  background-image: url("assets/gradient.png");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #399B98;
+}
+
+div.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:50%;
+    overflow:visible;
+}
+
+img.logo {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-200%;
+    margin-left:-55%;
+    margin-bottom:105%;
+}
+
+.slogan {
+  font-family:"Nunito-Semibold","San Francisco", sans-serif;
+  font-size:30px;
+  text-shadow: 0px 0px 1px rgba(255,255,255, 0.3);
+  color:#FFFFFF;
+  width:100%;
+  height:45px;
+  display:flex;
+  justify-content:center;
+  position:absolute;
+  top: 45%;
+}
+
+@font-face {
+  font-family:'Nunito';
+  src: url('Nunito-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'Nunito';
+  src: url('Nunito-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+.email-form {
+  display:flex;
+  justify-content:center;
+  position:absolute;
+}
+
+.wrapper {
+    padding-top: 750px;
+}
+.form-row {
+    
+  display: flex;
+  position: absolute;
+  justify-content: center;
+    
+  width: 100%;
+  width: 100vw;
+  padding: 1em;
+}
+
+.placeholder {
+  font-family:'Nunito';"San Francisco", sans-serif;  
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+  padding-left: 100px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #CCCCCC;
+   font-family:'Nunito';    
+   font-size: 18px;
+   letter-spacing: 0.8px;
+   font-weight:400;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #CCCCCC;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #CCCCCC;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #CCCCCC;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #CCCCCC;
+}
+
+.textfield {
+  width:340px;
+  height:52px;   
+  border-radius: 8px 0px 0px 8px;  
+  border:none;
+  box-shadow:inset 0 0 0.5px 0.5px #888;
+  background: #fff;    
+}
+
+.form-row button {
+
+  height:52px;
+  bottom:52px;
+  left:339px;    
+      
+  font-family:'Nunito',"San Francisco", sans-serif;     
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight:400;
+
+  color: #FFFFFF;
+  background-color: #1B5957;
+
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+
+  padding: 10px 2em;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #00BAB4;
+}
+
+.form-row button:active {
+  background-color: #00BAB4;
+}
+
+#email {
+   color:#184F4D;
+   font-family:'Nunito-Semibold';'Nunito';"San Francisco", sans-serif;      
+   font-size:18px;
+   letter-spacing:0.8px;
+   font-weight:400;
+   padding-left:20px;
+}
+
+#block-buttontext_full {
+   display:block;
+  }
+
+#block-buttontext_mobile {
+  display:none;
+  padding-right:5em;     
+ }
+
+input:focus {
+    outline:none;
+}  
+}
+
