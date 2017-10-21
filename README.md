@@ -1,0 +1,2 @@
+# waft
+Simple landing page.
